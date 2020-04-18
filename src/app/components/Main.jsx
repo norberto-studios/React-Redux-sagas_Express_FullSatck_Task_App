@@ -1,9 +1,9 @@
 import React from "react";
 import { Provider } from "react-redux";
-import { store } from "../store";
+import { store } from "../redux/store";
 import { ConnectedDashboard } from "./Dashboard";
 import { Router, Route } from "react-router-dom";
-import { history } from "../store/history";
+import { history } from "../redux/store/history";
 import { ConnectedNavigation } from "./Navigation";
 
 export const Main = () => (
