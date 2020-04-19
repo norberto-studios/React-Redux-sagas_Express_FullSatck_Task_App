@@ -1,11 +1,12 @@
 import * as types from "../actions/actions";
-import { defaultState as initialState } from "../../../server/defaultState";
 
-const groupsReducer = (state = initialState.groups, action) => {
+const groupsReducer = (groups = [], action) => {
   switch (action.type) {
-    
+    case types.SET_STATE:
+      return  action.state.group;
+
     default:
-      return state;
+      return groups;
   }
 };
 

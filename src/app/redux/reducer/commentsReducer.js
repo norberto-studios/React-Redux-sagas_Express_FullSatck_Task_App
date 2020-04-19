@@ -1,7 +1,6 @@
 import * as types from "../actions/actions";
-import { defaultState as initialState } from "../../../server/defaultState";
 
-const commentsReducer = (state = initialState.comments, action) => {
+const commentsReducer = (state = [], action) => {
   switch (action.type) {
    
     default:
